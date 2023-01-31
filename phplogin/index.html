@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8612344892650476"
+     crossorigin="anonymous"></script>
+            <meta charset="utf-8">
+            <title>Login</title>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+            <link href="style.cs" rel="stylesheet" type="text/css">
+            <style>
+                body {
+                  background-color: black;
+                }
+                h1 {
+                  color: green;
+                  text-align: center;
+                }
+                form {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  border: 2px solid grey;
+                  border-radius: 10px;
+                  padding: 20px;
+                  background-color: grey;
+                }
+                input[type="email"], input[type="password"], input[type="submit"] {
+                  width: 20%;
+                  height: 40px;
+                  margin: 10px;
+                  font-size: 20px;
+                  text-align: center;
+                }
+                input[type="text"] {
+                  width: 20%;
+                  height: 40px;
+                  margin: 10px;
+                  font-size: 20px;
+                  text-align: center;
+                }
+                input[type="submit"] {
+                  background-color: green;
+                  color: black;
+                  border: none;
+                  border-radius: 10px;
+                  cursor: pointer;
+                }
+              </style>
+        </head>
+	<body>
+        <div class="login"></div>
+			<h1>Login</h1>
+			<form action="authenticate.php" method="post">
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="submit" value="Login">
+			</form>
+            <form action="form.html">
+                <input type="submit" value="register">
+            </form>
+		</div>
+	</body>
+</html>
